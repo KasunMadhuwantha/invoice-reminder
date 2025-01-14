@@ -52,7 +52,7 @@ def send_email(subject, receiver_email, name, due_date, invoice_no, amount):
         <p>I just wanted to drop you a quick note to remind you that <strong> LKR {amount}</strong>  in respect of our invoice {invoice_no} is due for payment on <strong>{due_date}</strong>.</p>
         <p>I would be really grateful if you could confirm that everything is on track for payment.</p>
         <p>Best regards</p>
-        <p>YOUR NAME</p>
+        <p>Dozen Solutions</p>
       </body>
     </html>
     """,
