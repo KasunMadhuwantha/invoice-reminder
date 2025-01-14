@@ -1,18 +1,17 @@
-import os
 import smtplib
 from email.message import EmailMessage
 from email.utils import formataddr
 from pathlib import Path
 
-from dotenv import load_dotenv  # pip install python-dotenv
+# from dotenv import load_dotenv 
 
 PORT = 587  
 EMAIL_SERVER = "smtp.gmail.com"  # Adjust server address, if you are not using @outlook
 
-# Load the environment variables
-current_dir = Path(__file__).resolve().parent if "__file__" in locals() else Path.cwd()
-envars = current_dir / ".env"
-load_dotenv(envars)
+# # Load the environment variables
+# current_dir = Path(__file__).resolve().parent if "__file__" in locals() else Path.cwd()
+# envars = current_dir / ".env"
+# load_dotenv(envars)
 
 # Read environment variables
 # sender_email = os.getenv("EMAIL")
@@ -68,8 +67,8 @@ def send_email(subject, receiver_email, name, due_date, invoice_no, amount):
 if __name__ == "__main__":
     send_email(
         subject="Invoice Reminder",
-        name="Kasun Madhuwantha",
-        receiver_email="kasunmadhuwantha@gmail.com",
+        name="Venura Pussella",
+        receiver_email="venurajithmal@gmail.com",
         due_date="11, Aug 2024",
         invoice_no="INV-21-12-009",
         amount="5 000.00",
